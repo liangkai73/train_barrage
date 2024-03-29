@@ -167,5 +167,10 @@ document.getElementById('sendAll').addEventListener('click', () => {
 document.getElementById('randomAnimate').addEventListener('click', () => {
     instance.handleChangeAnimate();
 })
+document.getElementById('inputBox').addEventListener('keydown', function (event) {
+    if (event.keyCode === 13) {
+        instance.handlePush();
+    }
+});
 
 document.body._DanmuInstance = instance;
